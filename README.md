@@ -1,3 +1,3 @@
 # sidtuli.github.io
-Personal website
-Made by Sidhanth Tuli
+Personal website.
+Made by Sidhanth Tuli.
