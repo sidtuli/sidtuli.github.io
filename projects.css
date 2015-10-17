@@ -1,14 +1,25 @@
 h3 {
   text-align: center;
+  color: white;
 }
 h1 {
   text-align: center;
+  color: white;
+}
+body {
+  background-color: black;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
-
+p {
+  color: white;
+}
 #projs{
   text-align: center;
+  background: rgba(128,128,128, .25);
+  width: 40%;
+  margin: auto;
+  padding: .25%;
 }
