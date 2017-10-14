@@ -1,8 +1,152 @@
 <html>
 	<head>
 		<title>Sidhanth Tuli</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/index.css"/>
+        <script src="js/random.js"></script>
+        <meta charset="utf-8"/>
 	</head>
 	<body>
-		<img src="img/under_construction.gif"/>
+		<div id="title-container" class="container">
+            <div id="title-div" class="row">
+				<span id="title" class="col-lg-12">
+                    Sidhanth Tuli
+                </span>
+			</div>
+			<div id="front-links" class="row">
+                <div class="col-lg-3 front-button-div">
+                    <a class="front-link" href="#about-container">
+                        <button class="front-button">
+                            ABOUT
+                        </button>
+                    </a>
+                </div>
+                <div class="col-lg-3 front-button-div">
+                    <a class="front-link" href="#projects-container">
+                        <button class="front-button">
+                            PROJECTS
+                        </button>
+                    </a>
+                </div>
+                <div class="col-lg-3 front-button-div">
+                    <a id="resume-link" href="assets/resume.pdf">
+                        <button class="front-button">
+                            RESUME
+                        </button>
+                    </a>
+                </div>
+                <div class="col-lg-3 front-button-div">
+                    <a class="front-link" href="#random-container">
+                        <button class="front-button">
+                            RANDOM
+                        </button>
+                    </a>
+                </div>
+			</div>
+		</div>
+        <div id="about-container" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="section-header">
+                        ABOUT
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10">
+                    <p>
+                        Hello there! My name is Sidhanth Tuli. I'm currently pursuing a Bachelors of Science from the University of Maryland, College Park. I'm studying computer science  with a concentration in data science and a minor in statistics. I got started in programming in high school after taking a programming course and I've been writing code ever since. My main interests are in web/front-end development, machine learning, and data science. I've also dabbled in database management, full stack, and general application development. I would say I'm proficient with Python, HTML, CSS, and JavaScript. Specifically I've used libraries like jQuery, Angular 1, node, Bootstrap, and D3. Additionally, I'm familiar with Java, R, SQL, and PHP.
+                    </p>
+                    <p>
+                        I'm currently working as a web developer for The Diamondback, the student newspaper for the University of Maryland. I've helped update the layout and templates of their website, help them with data visualization and overall expanding their digital presence. I've also worked on projects like the <a href="http://salaryguide.diamondbacklab.com/#/">2017 Salary Guide</a>, the <a href="http://yearinreview.diamondbacklab.com/">2016-2017 "A Year In Review" special</a>, and the <a href="http://itsreal.diamondbacklab.com/">seven-part sexual assault investigation series "It's Real"</a>. Over summer 2017 I had an internship with TD Ameritrade, building a developer portal as well as automating server tests and a website to display the results. I used PHP, HTML, CSS, Java, and JavaScript (jQuery). The previous summer I interned for Casaplex and created a company web portal that included tools to facilitate the comparison of Excel spreadsheets to a database and automate the creation of instruction PDFs with a team of five. I worked on a stack of JavaScript (Angular 1), C# (.NET), and MySQL.
+                    </p>
+                    <p>
+                        I also have side projects that I put on <a href="https://github.com/sidtuli">Github</a> and attended several hackathons over my years in college. I've attended <a href="https://devpost.com/software/code-intro">HackPSU</a>, <a href="https://devpost.com/software/windowshare">HackMIT</a>, and <a href="https://devpost.com/software/represent-us">Bitcamp</a>. My friends and I won HackMIT in 2016 with ,<a href="https://devpost.com/software/windowshare">"Window Share"</a>, an application that allows users to seamlessly share files by dragging windows to the side of their screen. We came back next year and placed in the top ten, as well as won the Firebase sponsorship prize, with our app <a href="https://devpost.com/software/band-together">"Band Together"</a> that allowed people to collaboratively make music in real time.
+                    </p>
+                    <p>
+                        Looking to the future, I hope to get a job in one of my interests after I graduate in May 2018.
+                    </p>
+                </div>
+                <div class="col-lg-2" id="social-div">
+                    <a href="https://github.com/sidtuli">
+                        <img class="img-responsive img-social" src="img/github.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sidhanth-tuli-329620143/">
+                        <img class="img-responsive img-social" src="img/linkedin.png"/>
+                    </a>
+                    <a href="https://devpost.com/stuli">
+                        <img class="img-responsive img-social" src="img/devpost.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="projects-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="section-header">
+                        PROJECTS
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a class="project-link" href="https://hidden-fjord-16614.herokuapp.com/">
+                        <span class="project-header">represent.us</span>
+                        <img class="img-responsive" src="img/represent_us.png"/>
+                    </a>
+                    <p> A website built to help people connect with their congressional representatives. It was built during Bitcamp 2017 on a team of four. We used several congressional information APIs, Node.js, and Express.js templating.</p>
+                </div>
+                <div class="col-lg-4">
+                    <a class="project-link" href="http://informedapp.github.io/">
+                        <span class="project-header">InformedApp</span>
+                        <img class="img-responsive" src="img/informed.png"/>
+                    </a>
+                    <p> A hybrid web and mobile app to help consumers find more information on their medicine. It was built on a team of five novice programmers over my internship with Aurotech. We used the FDA's then in-beta openFDA API, jQuery, and material UI.</p>
+                </div>
+                <div class="col-lg-4">
+                    <a class="project-link" href="http://sidtuli.github.io/barrier/">
+                        <span class="project-header">Barrier</span>
+                        <img class="img-responsive" src="img/barrier.png"/>
+                    </a>
+                    <p>A web and film project built to explore the issues of internet censorship and access. I built this over my Spring 2016 semester as part of a capstone requirement for my honors programm - DCC. It was composed of pocorn.js, jQyuery, and jQuery Vector Map.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="projects-footer">
+                    <p>These are only a few of my projects, if you'd like to see more please check <a href="">my Github</a> or <a href="">my Devpost profile</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="random-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="section-header">
+                        RANDOM
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Sometimes I make a <a href="http://sidtuli.github.io/random/">random web page</a> that I host in a <a href="https://github.com/sidtuli/random">giant Github repository</a> for later use. Sometimes I do it in order to toy around with something new, leave a reference for later on how to use something, I don't want to dedicate a whole project to an idea, or a whole array of other reasons. However, here I'd like to show off a few them. So here you can get a taste of some of those web pages below and maybe get a better indication of my skills or interests.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="project-header" id="random-title">
+                    </span>
+                </div>
+                <div class="col-lg-6" id="button-div">
+                    <button class="btn btn-default" onclick="switch_random()">
+                        Another Random Web Page!
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="random-html">
+                </div>
+            </div>
+        </div>
 	</body>
 </html>

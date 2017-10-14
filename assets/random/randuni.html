@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-32"/>
+        <title>Random Unicode Character!</title>
+        <script>
+            window.onload = function() {
+                // Create paragraph to hold char
+                rand_char = document.createElement("h1");
+                // Generate random code
+                dec_code = (Math.floor(Math.random() * 10001)).toString();
+                
+                rand_char.setAttribute("title","Decimal Character Code: " + dec_code)
+                // Assign inner text to display the unicode
+                rand_char.innerHTML = "&#" + dec_code;
+                // Append the paragraph of the 
+                document.getElementById("char").appendChild(rand_char);
+            }
+        </script>
+        <style>
+            h1
+            {
+                font-size:20vw;
+            }
+            #char{
+                text-align: center;
+                top:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="char">
+            
+        </div>
+    </body>
+</html>

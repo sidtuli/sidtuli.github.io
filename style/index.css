@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+.img-social{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 120px !important;
+    display: inline;
+}
+#social-div{
+    text-align: center;
+}
+
+#title-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+    text-align: center;
+}
+#front-links{
+    height: 50%;
+}
+.front-link{
+    color: #333;
+}
+.front-link:hover{
+    color: #333;
+}
+#title-container{
+    height:100%;
+    border-bottom: black 1px solid;
+}
+#about-container,#projects-container,#random-container{
+    border-bottom: black 1px solid;
+}
+#title{
+    font-size: 4em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+#resume-link, .project-link{
+    color: #333;
+}
+
+#resume-link:hover{
+    color:#23527c;
+}
+
+#projects-footer{
+    text-align: center;
+}
+
+.front-button-div{
+    text-align:center;
+}
+
+.front-button,.section-header{
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.front-button:hover{
+    text-decoration: underline;
+}
+
+.project-header{
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+object {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+#button-div{
+    text-align: right;
+    padding: 2px;
+}

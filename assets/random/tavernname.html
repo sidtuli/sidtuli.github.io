@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <title>Tavern Name Generator</title>
+        <style>
+            #title{
+                font-size: 5em;
+                text-align: center;
+            }
+            div.button {
+                text-align: center;
+            }
+            #titles {
+                font-size: 3em;
+                text-align: center;
+            }
+            table{
+                font-size: 4vw;
+                width:100%;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+            td{
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            window.onload = function() {
+                twoNouns();
+                //adjAndNoun();
+
+            }
+            var adjectives =
+                ["Amber",
+                "Bellowing",
+                "Bitter",
+                "Black",
+                "Blazing",
+                "Bleak",
+                "Blessed",
+                "Bloody",
+                "Blue",
+                "Broken",
+                "Broken",
+                "Busy",
+                "Cacophonous",
+                "Copper",
+                "Courageous",
+                "Crimson",
+                "Cunning",
+                "Dancing",
+                "Dead",
+                "Disdainful",
+                "Drunken",
+                "Extravagant",
+                "Fizzing",
+                "Floating",
+                "Flying",
+                "Frosty",
+                "Ghastly",
+                "Ghostly",
+                "Glittering",
+                "Golden",
+                "Graceful",
+                "Green",
+                "Grotesque",
+                "Harmless",
+                "Heartless",
+                "Helpful",
+                "Hideous",
+                "Honeyed",
+                "Howling",
+                "Hungry",
+                "Jolly",
+                "Kindly",
+                "Last",
+                "Lazy",
+                "Loathsome",
+                "Lovesick",
+                "Loyal",
+                "Melancholy",
+                "Merry",
+                "Moldy",
+                "Musical",
+                "Muttering",
+                "Mysterious",
+                "Nervous",
+                "Nimble",
+                "Oozing",
+                "Petrified",
+                "Prancing",
+                "Purple",
+                "Reckless",
+                "Righteous",
+                "Roaring",
+                "Roasted",
+                "Romantic",
+                "Ruby",
+                "Salty",
+                "Scented",
+                "Scorned",
+                "Seven",
+                "Shimmering",
+                "Shivering",
+                "Shrieking",
+                "Sickly",
+                "Silent",
+                "Silver",
+                "Singing",
+                "Sleeping",
+                "Smoking",
+                "Squeaky",
+                "Stubborn",
+                "Tainted",
+                "Terrible",
+                "Thirsty",
+                "Thirteen",
+                "Thorny",
+                "Three",
+                "Tipsy",
+                "Troublesome",
+                "Two",
+                "Vexing",
+                "Violet",
+                "Wailing",
+                "Wandering",
+                "Wanton",
+                "Whispering",
+                "Whistling",
+                "White",
+                "Wicked",
+                "Wondrous",
+                "Yellow"];
+            var nouns =
+                ["Adder",
+                "Ant",
+                "Axe",
+                "Barrel",
+                "Bear",
+                "Beaver",
+                "Beetle",
+                "Bell",
+                "Boar",
+                "Bone",
+                "Boot",
+                "Bowl",
+                "Bucket",
+                "Bull",
+                "Candle",
+                "Cat",
+                "Claw",
+                "Cloak",
+                "Cock",
+                "Coin",
+                "Comb",
+                "Cow",
+                "Crow",
+                "Crown",
+                "Cup",
+                "Door",
+                "Dragon",
+                "Eagle",
+                "Egg",
+                "Elephant",
+                "Fang",
+                "Fish",
+                "Flea",
+                "Fork",
+                "Giant",
+                "Griffin",
+                "Gristle",
+                "Hare",
+                "Hart",
+                "Hawk",
+                "Hen",
+                "Hog",
+                "Hole",
+                "Horse",
+                "Hound",
+                "Jar",
+                "Kettle",
+                "Key",
+                "Knife",
+                "Lamb",
+                "Lamp",
+                "Lantern",
+                "Lion",
+                "Lute",
+                "Mackerel",
+                "Maid",
+                "Mermaid",
+                "Mole",
+                "Monk",
+                "Moon",
+                "Mule",
+                "Needle",
+                "Noose",
+                "Orb",
+                "Pearl",
+                "Pig",
+                "Pipe",
+                "Plow",
+                "Post",
+                "Prince",
+                "Queen",
+                "Rat",
+                "Rose",
+                "Saint",
+                "Serpent",
+                "Shoe",
+                "Shovel",
+                "Skull",
+                "Snout",
+                "Sow",
+                "Spoon",
+                "Staff",
+                "Star",
+                "Stone",
+                "Sun",
+                "Sword",
+                "Thistle",
+                "Thorn",
+                "Thread",
+                "Throne",
+                "Torch",
+                "Tower",
+                "Unicorn",
+                "Vulture",
+                "Weasel",
+                "Whale",
+                "Wheel",
+                "Whistle",
+                "Wife",
+                "Worm"]
+            function twoNouns() {
+                var first = Math.floor(Math.random() * nouns.length);
+                var second = Math.floor(Math.random() * nouns.length);
+                document.getElementById("title").innerHTML = "The " + nouns[first] + " and " + nouns[second];
+            }
+            function adjAndNoun() {
+                var first = Math.floor(Math.random() * adjectives.length);
+                var second = Math.floor(Math.random() * nouns.length);
+                document.getElementById("title").innerHTML = "The " + adjectives[first] + " " + nouns[second];
+            }
+            function fiveTwoNouns() {
+                var resultString = "";
+                for(i = 0; i < 5; i++) {
+                    var first = Math.floor(Math.random() * nouns.length);
+                    var second = Math.floor(Math.random() * nouns.length);
+                    resultString += "The " + nouns[first] + " and " + nouns[second] + "<br/>";
+
+                }
+                document.getElementById("titles").innerHTML = resultString;
+            }
+            function fiveAdjAndNoun() {
+                var resultString = "";
+                for(i = 0; i < 5; i++) {
+                    var first = Math.floor(Math.random() * adjectives.length);
+                    var second = Math.floor(Math.random() * nouns.length);
+                    resultString += "The " + adjectives[first] + " " + nouns[second] + "<br/>";
+
+                }
+                document.getElementById("titles").innerHTML = resultString;
+            }
+            function fiveEach() {
+                var resultString = "<table>";
+                for(i = 0; i < 5; i++) {
+                    resultString += "<tr>";
+                    var adj = Math.floor(Math.random() * adjectives.length);
+                    var noun_1 = Math.floor(Math.random() * nouns.length);
+                    var noun_2 = Math.floor(Math.random() * nouns.length);
+                    var noun_3 = Math.floor(Math.random() * nouns.length);
+                    resultString += "<td>" + "The " + nouns[noun_1] + " and " + nouns[noun_2] + "</td>";
+
+                    resultString += "<td>" + "The " + adjectives[adj] + " " + nouns[noun_3] + "</td>";
+                    resultString += "</tr>";
+                }
+                resultString +="</table>"
+                document.getElementById("titles").innerHTML = resultString;
+            }
+        </script>
+        <h1 id="title"></h1>
+        <div class="button">
+            <button onclick="twoNouns()">Noun + Noun</button>
+            <button onclick="adjAndNoun()">Adjective + Noun</button>
+        </div>
+        <div class="button">
+            <button onclick="fiveTwoNouns()">Five * (Noun + Noun)</button>
+            <button onclick="fiveEach()">Five of Each</button>
+            <button onclick="fiveAdjAndNoun()">Five * (Adjective + Noun)</button>
+        </div>
+        <p id="titles"></p>
+    </body>
+</html>
